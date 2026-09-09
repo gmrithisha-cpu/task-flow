@@ -25,7 +25,8 @@ jobs:
 
       - name: Test
         run: python -m pytest -v
-              - name: Build package
+
+      - name: Build package
         run: |
           mkdir -p dist
           cp app.py requirements.txt dist/
