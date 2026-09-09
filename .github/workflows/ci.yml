@@ -26,9 +26,9 @@ jobs:
       - name: Test
         run: python -m pytest -v
               - name: Build package
-        run: |
-          mkdir -p dist
-          cp app.py requirements.txt dist/
+                run: |
+                  mkdir -p dist
+                  cp app.py requirements.txt dist/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
